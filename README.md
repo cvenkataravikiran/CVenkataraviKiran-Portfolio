@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # C Venkata Ravi Kiran Portfolio
 
 A full stack portfolio website to showcase my projects, skills, education, and contact information.
@@ -52,6 +52,3 @@ A full stack portfolio website to showcase my projects, skills, education, and c
     npm start 
 
 Open http://localhost:3000 to view the web application 
-=======
-# CVenkataraviKiran-Portfolio
->>>>>>> 97baad4c99cba3a3e47b72c5247f77082ada3786
