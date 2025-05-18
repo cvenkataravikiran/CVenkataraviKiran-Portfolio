@@ -10,6 +10,10 @@ function Navbar() {
     setIsOpen(!isOpen);
   };
 
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
+
   return (
     <nav 
       className="navbar navbar-expand-lg fixed-top"
@@ -31,7 +35,7 @@ function Navbar() {
           type="button" 
           onClick={toggleMenu}
           aria-controls="navbarNav" 
-          aria-expanded="false" 
+          aria-expanded={isOpen} 
           aria-label="Toggle navigation"
           style={{ borderColor: theme.navbarText }}
         >
@@ -52,6 +56,7 @@ function Navbar() {
                   className="nav-link" 
                   href={`#${item.toLowerCase()}`}
                   style={{ color: theme.navbarText }}
+                  onClick={closeMenu}
                 >
                   {item}
                 </a>
@@ -62,6 +67,7 @@ function Navbar() {
                 className="nav-link" 
                 href="#contact"
                 style={{ color: theme.navbarText }}
+                onClick={closeMenu}
               >
                 Contact
               </a>
