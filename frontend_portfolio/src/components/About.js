@@ -30,7 +30,7 @@ function About() {
               <img
                 src="/profile-picture.png"
                 alt="Professional Profile"
-                className="img-fluid rounded-3"
+                className="img-fluid rounded-circle"
                 style={{
                   boxShadow: `0 10px 30px ${theme.shadowColor}`,
                   border: `3px solid ${theme.primaryColor}`,
@@ -39,11 +39,13 @@ function About() {
                   width: '100%',
                   height: 'auto',
                   display: 'block',
-                  margin: '0 auto'
+                  margin: '0 auto',
+                  objectFit: 'cover',
+                  aspectRatio: '1/1'
                 }}
               />
               <div 
-                className="image-overlay rounded-3"
+                className="image-overlay rounded-circle"
                 style={{
                   position: 'absolute',
                   top: '0',
@@ -75,6 +77,8 @@ function About() {
                   cursor: pointer;
                   max-width: 400px;
                   margin: 0 auto;
+                  border-radius: 50%;
+                  overflow: hidden;
                 }
                 .profile-image-container:hover .image-overlay {
                   opacity: 1;
