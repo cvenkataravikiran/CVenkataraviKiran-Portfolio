@@ -76,7 +76,10 @@ function Navbar() {
             <li className="nav-item ms-2">
               <button
                 className="btn btn-link nav-link p-0 d-flex align-items-center"
-                onClick={toggleTheme}
+                onClick={() => {
+                  toggleTheme();
+                  closeMenu(); // <-- close menu after toggling theme
+                }}
                 style={{ color: theme.navbarText }}
                 aria-label="Toggle theme"
               >
