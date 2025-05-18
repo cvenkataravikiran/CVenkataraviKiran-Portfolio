@@ -40,7 +40,7 @@ function About() {
                   height: 'auto',
                   display: 'block',
                   margin: '0 auto',
-                  objectFit: 'cover',
+                  objectFit: 'contain',
                   aspectRatio: '1/1'
                 }}
               />
@@ -57,7 +57,8 @@ function About() {
                   transition: 'all 0.3s ease-in-out',
                   display: 'flex',
                   alignItems: 'center',
-                  justifyContent: 'center'
+                  justifyContent: 'center',
+                  transform: 'translateY(0)'
                 }}
               >
                 {/* <div className="social-links">
@@ -79,6 +80,9 @@ function About() {
                   margin: 0 auto;
                   border-radius: 50%;
                   overflow: hidden;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
                 }
                 .profile-image-container:hover .image-overlay {
                   opacity: 1;
