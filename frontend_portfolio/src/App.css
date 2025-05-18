@@ -1,0 +1,148 @@
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.transition-transform {
+  transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+}
+
+/* Navbar Styles */
+.nav-link {
+  position: relative;
+  padding: 0.5rem 1rem !important;
+  transition: color 0.3s ease !important;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background-color: currentColor;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.nav-link:hover::after {
+  width: 80%;
+}
+
+/* Hero Button Styles */
+.btn.btn-lg {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease !important;
+  z-index: 1;
+}
+
+.btn.btn-lg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  z-index: -1;
+}
+
+.btn.btn-lg:hover::before {
+  width: 100%;
+}
+
+.btn.btn-lg:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 7px 14px rgba(0, 0, 0, 0.2) !important;
+}
+
+.btn.btn-lg:active {
+  transform: translateY(-1px);
+}
+
+/* Contact Form Styles */
+.form-control {
+  transition: all 0.3s ease-in-out !important;
+}
+
+.form-control::placeholder {
+  opacity: 1 !important;
+  transition: opacity 0.3s ease-in-out !important;
+}
+
+/* WebKit browsers */
+.form-control::-webkit-input-placeholder {
+  opacity: 1 !important;
+  transition: opacity 0.3s ease-in-out !important;
+}
+
+/* Firefox 19+ */
+.form-control::-moz-placeholder {
+  opacity: 1 !important;
+  transition: opacity 0.3s ease-in-out !important;
+}
+
+/* Firefox 18- */
+.form-control:-moz-placeholder {
+  opacity: 1 !important;
+  transition: opacity 0.3s ease-in-out !important;
+}
+
+/* IE 10+ */
+.form-control:-ms-input-placeholder {
+  opacity: 1 !important;
+  transition: opacity 0.3s ease-in-out !important;
+}
+
+.form-control:focus {
+  box-shadow: none !important;
+}
+
+.form-control:focus::placeholder {
+  opacity: 0.9 !important;
+}
+
+.form-control:focus::-webkit-input-placeholder {
+  opacity: 0.9 !important;
+}
+
+.form-control:focus::-moz-placeholder {
+  opacity: 0.9 !important;
+}
+
+.form-control:focus:-moz-placeholder {
+  opacity: 0.9 !important;
+}
+
+.form-control:focus:-ms-input-placeholder {
+  opacity: 0.9 !important;
+}
+
+/* Dark mode specific styles */
+.dark-mode .form-control::placeholder,
+.dark-mode .form-control::-webkit-input-placeholder,
+.dark-mode .form-control::-moz-placeholder,
+.dark-mode .form-control:-moz-placeholder,
+.dark-mode .form-control:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+/* Dark mode button hover effect */
+.dark-mode .btn.btn-lg::before {
+  background: rgba(0, 0, 0, 0.1);
+}
