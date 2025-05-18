@@ -39,13 +39,13 @@ A full stack portfolio website to showcase my projects, skills, education, and c
 
     git clone  
 
-2. Setup and run backend
+### 2. Setup and run backend
    
     cd backend_portfolio
     npm install
     node server.js
 
-3. Setup and run frontend
+### 3. Setup and run frontend
 
     cd frontend_portfolio
     npm install
