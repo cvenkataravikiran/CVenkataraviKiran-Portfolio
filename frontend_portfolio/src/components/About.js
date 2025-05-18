@@ -28,7 +28,7 @@ function About() {
           <div className="col-lg-6 mb-4 mb-lg-0">
             <div className="profile-image-container">
               <img
-                src="/profile-picture.jpg"
+                src="/public/profile-picture.jpg"
                 alt="Professional Profile"
                 className="img-fluid rounded-3"
                 style={{
