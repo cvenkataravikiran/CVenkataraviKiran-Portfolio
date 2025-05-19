@@ -21,7 +21,7 @@ function Contact() {
     // emailjs.init("YOUR_PUBLIC_KEY"); // You'll need to replace this with your actual public key
   }, []);
 
-  const handleSubmit = async (e) => {
+ const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus({ submitting: true, error: null, success: false });
 
