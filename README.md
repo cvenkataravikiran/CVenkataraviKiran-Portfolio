@@ -37,7 +37,7 @@ A full stack portfolio website to showcase my projects, skills, education, and c
 
 ### 1. Clone the repositorie
 
-    git clone  
+    git clone https://github.com/cvenkataravikiran/CVenkataravikiran-portfolio.git
 
 ### 2. Setup and run backend
    
