@@ -118,7 +118,7 @@ function Projects() {
                 transition: 'all 0.3s ease-in-out'
               }}
             >
-              Video Demo
+              Video Demo/Live Demo
             </a>
             <a
               href={project.githubLink}
