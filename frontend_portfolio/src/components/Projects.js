@@ -15,11 +15,11 @@ function Projects() {
     },
     {
       title: 'C Venkata Ravi Kiran - Portfolio ',
-      description: '',
-      image: '',
+      description: 'A Portfolio website showcasing my projects, skills, and experiences. Built with React, Node & Express and styled with Bootstrap CSS.',
+      image: '/images/projects/portfolio.png',
       technologies: ['React', 'Node.js', 'Express.js', 'Bootstrap CSS'],
-      liveLink: '',
-      githubLink: ''
+      liveLink: 'https://cvenkataravikiran-portfolio.vercel.app/',
+      githubLink: 'https://github.com/cvenkataravikiran/CVenkataravikiran-portfolio.git'
     }
     // {
     //   title: 'Task Management App',
