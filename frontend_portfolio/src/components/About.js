@@ -2,7 +2,7 @@ import React from 'react';
 import { useTheme } from './ThemeContext';
 
 function About() {
-  const { theme, isDarkMode } = useTheme();
+  const { theme, isDarkMode } = useTheme();
 
   return (
     <section 
@@ -28,7 +28,7 @@ function About() {
           <div className="col-lg-6 mb-4 mb-lg-0">
             <div className="profile-image-container">
               <img
-                src="/public/profile-picture.jpg"
+                src="/profile-picture.jpg"
                 alt="Professional Profile"
                 className="img-fluid rounded-3"
                 style={{
