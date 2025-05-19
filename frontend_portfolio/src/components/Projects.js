@@ -12,6 +12,14 @@ function Projects() {
       technologies: ['React', 'Node.js', 'Express.js', 'SQLite', 'Google Maps API', 'Bootstrap CSS'],
       liveLink: 'https://drive.google.com/file/d/1dnLfl8pd3IZf-EHRgDO3GqoGCMc5Sv9u/view?usp=drive_link',
       githubLink: 'https://github.com/cvenkataravikiran/Smart-Healthcare-WebApp-Frontend.git#'
+    },
+    {
+      title: 'C Venkata Ravi Kiran - Portfolio ',
+      description: '',
+      image: '',
+      technologies: ['React', 'Node.js', 'Express.js', 'Bootstrap CSS'],
+      liveLink: '',
+      githubLink: ''
     }
     // {
     //   title: 'Task Management App',
