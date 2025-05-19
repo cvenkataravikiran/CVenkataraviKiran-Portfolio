@@ -1,12 +1,21 @@
-import React, { createContext, useState, useContext } from 'react';
+import React, { createContext, useState, useContext, useEffect } from 'react';
 
 const ThemeContext = createContext();
 
 export function ThemeProvider({ children }) {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  // Initialize state from localStorage or default to false (light theme)
+  const [isDarkMode, setIsDarkMode] = useState(() => {
+    const savedTheme = localStorage.getItem('isDarkMode');
+    return savedTheme ? JSON.parse(savedTheme) : false;
+  });
+
+  // Save theme preference to localStorage whenever it changes
+  useEffect(() => {
+    localStorage.setItem('isDarkMode', JSON.stringify(isDarkMode));
+  }, [isDarkMode]);
 
   const toggleTheme = () => {
-    setIsDarkMode(!isDarkMode);
+    setIsDarkMode(prev => !prev);
   };
 
   const theme = {
@@ -40,4 +49,4 @@ export function ThemeProvider({ children }) {
 
 export function useTheme() {
   return useContext(ThemeContext);
-} 
+}
